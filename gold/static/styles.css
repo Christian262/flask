@@ -1,0 +1,18 @@
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+.gold {
+    width: 200px;
+    height: 200px;
+    border: 1px black solid;
+    display: inline-block;
+}
+#log {
+    display: inline-block;
+    width: 600px;
+    height: auto;
+    border: 1px black solid;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}

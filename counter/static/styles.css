@@ -1,0 +1,9 @@
+main {
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px;
+    border: 1px black solid;
+}
+h1, h3 {
+    text-align: center;
+}

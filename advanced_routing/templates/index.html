@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Advanced Validation Example</title>
+</head>
+<body>
+  <h1>Enter your detes!</h1>
+  <form action='/process' method='POST'>
+      {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <p> {{ message }}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    Email:<input type="text" name="email" required></br>
+    First Name:<input type="text" name="first_name" required></br>
+    Last Name:<input type="text" name="last_name" required></br>
+    Password:<input type="text" name="pass" required></br>
+    Confirm Password:<input type="text" name="pass_confirm" required></br>
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
